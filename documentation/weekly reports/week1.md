@@ -4,3 +4,5 @@ This week I read through the course page; the instructions, schedule and assessm
 I’ve read a lot about neural networks and machine learning algorithms to better my understanding of the topic before I start working on the project. I learned more especially about the math of neural networks and about different ways to implement this type of program.
 The details of how much of the program I need to build myself and what prebuilt tools, libraries and frameworks I can use to keep the workload reasonable are still unclear to me. I also don’t yet completely understand how the end product will be used and tested, but I’m sure that will get clearer as the program progresses.
 I still need to do some more research before I am able to confidently start programming, but I aim to start building the neural network next week.
+
+I spent about 7 hours on research and writing the documentation
