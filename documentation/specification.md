@@ -20,3 +20,4 @@ Some of the resources I intend to use:
 - https://www.geeksforgeeks.org/machine-learning/handwritten-digit-recognition-using-neural-network/
 - https://www.geeksforgeeks.org/deep-learning/neural-networks-a-beginners-guide/
 - https://materiaalit.github.io/intro-to-ai/
+- https://numpy.org/numpy-tutorials/tutorial-deep-learning-on-mnist/
