@@ -55,7 +55,6 @@ mnist_image = x_train[59999, :].reshape(28, 28)
 fig, ax = plt.subplots()
 # set the color mapping to grayscale to have a black background.
 ax.imshow(mnist_image, cmap="gray")
-fig.savefig("sample_single.png")
 
 num_examples = 5
 seed = 147197952744
@@ -64,4 +63,28 @@ rng = np.random.default_rng(seed)
 fig, axes = plt.subplots(1, num_examples)
 for sample, ax in zip(rng.choice(x_train, size=num_examples, replace=False), axes):
     ax.imshow(sample.reshape(28, 28), cmap="gray")
-fig.savefig("sample_grid.png")
+
+# grayscale to binary
+threshold = 127
+train = (x_train > threshold).astype(np.uint8)
+test = (x_test > threshold).astype(np.uint8)
+
+# binary images to point sets
+def point_sets(binary_images):
+    point_sets = []
+    for img in binary_images:
+        img_2d = img.reshape(28, 28)
+        rows, cols = np.where(img_2d == 1)
+        pts = np.stack([rows, cols], axis=1).astype(np.float32)
+        point_sets.append(pts)
+    return point_sets
+
+train_points = point_sets(train)
+test_points = point_sets(test)
+
+fig, axes = plt.subplots(1, 2)
+axes[0].imshow(x_train[0].reshape(28, 28), cmap="gray")
+axes[0].set_title("grayscale")
+axes[1].imshow(train[0].reshape(28, 28), cmap="gray")
+axes[1].set_title("binary")
+fig.savefig("binary_comparison.png")
