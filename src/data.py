@@ -81,10 +81,3 @@ def point_sets(binary_images):
 
 train_points = point_sets(train)
 test_points = point_sets(test)
-
-fig, axes = plt.subplots(1, 2)
-axes[0].imshow(x_train[0].reshape(28, 28), cmap="gray")
-axes[0].set_title("grayscale")
-axes[1].imshow(train[0].reshape(28, 28), cmap="gray")
-axes[1].set_title("binary")
-fig.savefig("binary_comparison.png")
