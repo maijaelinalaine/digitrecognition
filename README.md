@@ -6,4 +6,8 @@ Algorithms and AI Project course at University of Helsinki
 
 [Project Specification](documentation/specification.md)
 
-[Week 1 Report](documentation/weekly%20reports/week1.md)
+## Weekly reports
+
+[Week 1](documentation/weekly%20reports/week1.md)
+
+[Week 2](documentation/weekly%20reports/week2.md)
