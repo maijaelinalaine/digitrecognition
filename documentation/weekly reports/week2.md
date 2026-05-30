@@ -1,3 +1,5 @@
+# Week 2
+
 This week I started working on the project by first downloading the MNIST dataset after doing some research on how to access and use it. I also did some of the preprocessing of the data by converting the grayscale images to binary, and the binary images to point sets for training and testing. I might still implement one-hot encoding but I’m not sure if that’s necessary.
 
 I also did more research on the math of neural networks and the different parts and functions needed to build one, and I learned more especially about the backpropagation algorithm. I tried to find out what would be the best way to implement the neural network for my specific project, and by asking Claude code lots of questions I started to understand what I should do. Then I started working on the neural network by defining a class for it and adding some of the functions.
