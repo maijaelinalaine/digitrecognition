@@ -11,3 +11,5 @@ Algorithms and AI Project course at University of Helsinki
 [Week 1](documentation/weekly%20reports/week1.md)
 
 [Week 2](documentation/weekly%20reports/week2.md)
+
+[Week 3](documentation/weekly%20reports/week3.md)
